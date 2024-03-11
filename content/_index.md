@@ -39,7 +39,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: 简介
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: skills
@@ -75,7 +75,7 @@ sections:
               * Analysing
               * Modelling
               * Deploying
-        - title: Professor of Semiconductor Physics
+        - title: 研究生
           company: University X
           company_url: ''
           company_logo: org-x
