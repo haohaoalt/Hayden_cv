@@ -44,15 +44,16 @@ sections:
       username: admin
   - block: skills
     content:
-      title: Skills
-      text: ''
+      title: 技能
+      text: '技能test'
       # Choose a user to display skills from (a folder name within `content/authors/`)
       username: admin
     design:
       columns: '1'
   - block: experience
+    id: experience
     content:
-      title: Experience
+      title: 经历
       # Date format for experience
       #   Refer to https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -62,33 +63,40 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: 实习生
+          company: Momenta
           company_url: ''
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+          location: 苏州
+          date_start: '2023-03-22'
+          date_end: '2023-06-22'
           description: |2-
-              Responsibilities include:
+              岗位职责:
 
-              * Analysing
-              * Modelling
-              * Deploying
+              * SSP
         - title: 研究生
-          company: University X
+          company: 苏州大学
           company_url: ''
           company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          location: 苏州
+          date_start: '2021-09-01'
+          date_end: '2024-06-30'
+          description: 控制科学与工程
+        - title: 本科
+          company: 苏州大学
+          company_url: ''
+          company_logo: org-x
+          location: 苏州
+          date_start: '2017-09-01'
+          date_end: '2021-07-01'
+          description: 电气工程及其自动化
     design:
       columns: '2'
   - block: accomplishments
+    id: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
+      title: 成就
       subtitle:
       # Date format: https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -130,7 +138,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: Recent Posts
+      title: 帖子
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
@@ -157,7 +165,7 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Projects
+      title: 项目
       filters:
         folders:
           - project
@@ -169,11 +177,13 @@ sections:
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
       buttons:
-        - name: All
+        - name: 所有
           tag: '*'
-        - name: Deep Learning
+        - name: 深度学习
           tag: Deep Learning
-        - name: Other
+        - name: 机器人
+          tag: Deep Learning
+        - name: 其他
           tag: Demo
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
@@ -181,18 +191,18 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: '1'
   - block: collection
     id: featured
     content:
-      title: Featured Publications
+      title: 作品
       filters:
         folders:
           - publication
@@ -201,8 +211,9 @@ sections:
       columns: '2'
       view: card
   - block: collection
+    id: publications
     content:
-      title: Recent Publications
+      title: 论文
       text: |-
         {{% callout note %}}
         Quickly discover relevant content by [filtering publications](./publication/).
@@ -217,7 +228,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: 讨论
       filters:
         folders:
           - event
@@ -225,8 +236,9 @@ sections:
       columns: '2'
       view: compact
   - block: tag_cloud
+    id: tag_cloud
     content:
-      title: Popular Topics
+      title: 话题
     design:
       columns: '2'
 ---

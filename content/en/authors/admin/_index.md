@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 张 昊
+title: Hayden
 
 # Name pronunciation (optional)
 # name_pronunciation: Hao Zhang
@@ -36,11 +36,11 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: 控制科学与工程
-      institution: 苏州大学
+    - course: Control Science and Engineering
+      institution: Soochow University
       year: 2021
-    - course: 电气工程及其自动化
-      institution: 苏州大学
+    - course: Electrical Engineering and Automation
+      institution: Soochow University
       year: 2017
 
 # Skills
@@ -116,5 +116,5 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-张昊目前是一个在校研究生。
+Hayden is a graduate student in control science and engineering at Soochow University.
 {style="text-align: justify;"}
